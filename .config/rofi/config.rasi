@@ -1,5 +1,5 @@
 * {
-    selected-normal-foreground:  rgba ( 2, 20, 63, 100 % );
+    selected-normal-foreground:  rgba ( 220, 220, 220, 100 % );
     foreground:                  rgba ( 255, 255, 255, 100 % );
     normal-foreground:           @foreground;
     alternate-normal-background: rgba ( 0, 0, 0, 0 % );
@@ -12,13 +12,13 @@
     lightbg:                     rgba ( 238, 232, 213, 100 % );
     selected-active-foreground:  rgba ( 2, 20, 63, 100 % );
     alternate-active-background: rgba ( 0, 0, 0, 0 % );
-    background:                  rgba ( 0, 0, 33, 65 % );
-    bordercolor:                 rgba ( 219, 223, 188, 100 % );
+    background:                  rgba ( 0, 0, 0, 70 % );
+    bordercolor:                 rgba ( 63, 63, 63, 100 % );
     alternate-normal-foreground: @foreground;
     normal-background:           rgba ( 0, 0, 208, 0 % );
     lightfg:                     rgba ( 88, 104, 117, 100 % );
-    selected-normal-background:  rgba ( 219, 223, 188, 100 % );
-    border-color:                @foreground;
+    selected-normal-background:  rgba ( 201, 201, 201, 10 % );
+    border-color:                rgba ( 200, 200, 200, 100 % );
     spacing:                     2;
     separatorcolor:              rgba ( 219, 223, 188, 100 % );
     urgent-background:           rgba ( 0, 0, 208, 0 % );
@@ -33,6 +33,7 @@ window {
     background-color: @background;
     border:           1;
     padding:          5;
+	 width:            400px ;
 }
 mainbox {
     border:  0;
@@ -51,8 +52,9 @@ listview {
     border:       2px 0px 0px ;
     border-color: @separatorcolor;
     spacing:      2px ;
-    scrollbar:    true;
+    scrollbar:    false;
     padding:      2px 0px 0px ;
+	 lines: 5 ;
 }
 element {
     border:  0;
@@ -98,12 +100,6 @@ element.alternate.active {
     background-color: @alternate-active-background;
     text-color:       @alternate-active-foreground;
 }
-scrollbar {
-    width:        4px ;
-    border:       0;
-    handle-width: 8px ;
-    padding:      0;
-}
 mode-switcher {
     border:       2px 0px 0px ;
     border-color: @separatorcolor;
@@ -124,6 +120,7 @@ case-indicator {
 entry {
     spacing:    0;
     text-color: @normal-foreground;
+	 placeholder: "";
 }
 prompt, button{
     spacing:    0;
@@ -139,6 +136,6 @@ textbox-prompt-colon {
     text-color: @normal-foreground;
 }
 configuration {
-display-drun: "> ";
+display-drun: " > ";
 font: "segoe ui this 15";
 }
