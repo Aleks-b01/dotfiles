@@ -8,8 +8,8 @@
 
 syntax on
 set relativenumber
-set tabstop=2
-set shiftwidth=2
+set tabstop=3
+set shiftwidth=3
 set hlsearch
 set showmatch
 set bg=dark
