@@ -6,7 +6,7 @@
 # ██║  ██║███████╗███████╗██║ ╚██╗██████╔╝     ██║██████╔╝  ╚█████╔╝╚█████╔╝██║ ╚███║██║     ██║╚██████╔╝
 # ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═════╝      ╚═╝╚═════╝    ╚════╝  ╚════╝ ╚═╝  ╚══╝╚═╝     ╚═╝ ╚═════╝ 
 
-exec_always ~/.screenlayout/deafult1.sh
+exec_always ~/.screenlayout/deafult.sh
 set $mod Mod1
 font pango:segoe ui this 11
 exec --no-startup-id dex --autostart --environment i3
@@ -91,7 +91,7 @@ client.focused_inactive $bg $bg $xtext $bg
 client.urgent $bg $bg $text $bg
 hide_edge_borders both
 
-exec_always nitrogen --set-auto ~/Documents/Wallpapers/astronautwallpaper.jpg
+exec_always nitrogen --restore
 exec_always picom
 default_orientation horizontal
 for_window [class="^.*"] border pixel 2
