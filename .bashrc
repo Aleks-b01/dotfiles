@@ -29,3 +29,4 @@ alias swmd-light='sudo cp Documents/configs/i3/lightconfig .config/i3/config; i3
 alias swmd-pink='sudo cp Documents/configs/i3/pinkconfig .config/i3/config; i3-msg restart'
 alias swmd-purple='sudo cp Documents/configs/i3/purpleconfig .config/i3/config; i3-msg restart'
 alias swmd-default='sudo cp Documents/configs/i3/config .config/i3/config; i3-msg restart'
+alias git-tkn='cat Documents/git/tkn'
