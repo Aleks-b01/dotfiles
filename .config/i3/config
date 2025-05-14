@@ -64,6 +64,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym $mod+p exec pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym $mod+o exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym $mod+Shift+w exec nmcli device wifi connect KabelBox-0D54 --ask
 
 # Resize mode
 mode "resize" {
