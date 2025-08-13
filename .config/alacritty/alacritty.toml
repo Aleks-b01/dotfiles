@@ -1,1 +1,81 @@
+[terminal.shell]
+program = "/usr/bin/bash"
+args = ["-l"]
 
+[window]
+startup_mode = "Windowed"
+title = "Alacritty"
+dynamic_title = true 
+decorations_theme_variant = "None"
+decorations = "Full"
+opacity = 1
+blur = false 
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[font]
+normal = { family = "monospace", style = "Bold" }
+size = 14
+builtin_box_drawing = true 
+
+[colors]
+
+[colors.search]
+matches = { foreground = "#181818", background = "#ac4242" }
+focused_match = { foreground = "#181818", background = "#f4bf75" }
+
+[colors.hints]
+start = { foreground = "#181818", background = "#f4bf75" }
+end = { foreground = "#181818", background = "#ac4242" }
+
+[colors.normal]
+black = "#3d3d3d"
+red = "#e25858"
+green = "#5edb7b"
+yellow = "#f2ba6d"
+blue = "#539afc"
+magenta = "#d36df2"
+cyan = "#5de1ea"
+white = "#ffffff"
+
+[colors.bright]
+black = "#3d3d3d"
+red = "#e25858"
+green = "#5edb7b"
+yellow = "#f2ba6d"
+blue = "#539afc"
+magenta = "#d36df2"
+cyan = "#5de1ea"
+white = "#ffffff"
+
+[colors.dim]
+black = "#3d3d3d"
+red = "#e25858"
+green = "#5edb7b"
+yellow = "#f2ba6d"
+blue = "#539afc"
+magenta = "#d36df2"
+cyan = "#5de1ea"
+white = "#ffffff"
+
+[bell]
+animation = "Linear"
+duration = 0
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+save_to_clipboard = false
+
+[cursor]
+style = { shape = "Beam", blinking = "Off" }
+unfocused_hollow = false
+thickness = 0.15
+
+[mouse]
+hide_when_typing = true
+
+[general]
+live_config_reload = false
+import = []
