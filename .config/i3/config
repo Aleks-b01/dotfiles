@@ -80,12 +80,13 @@ bindsym $mod+r mode "resize"
 
 # Borders
 set $bg #3d3d3d
+set $fbg #838383
 set $xbg #1f1f1f
 set $text #ffffff
 set $xtext #a3a3a3
 set $urgent #ad3939
 
-client.focused $bg $bg $text $bg
+client.focused $fbg $fbg $text $bg
 client.unfocused $bg $bg $xtext $bg
 client.focused_inactive $bg $bg $xtext $bg
 client.urgent $bg $bg $text $bg
